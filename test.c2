@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+    printf("a jie\n");
+    printf("啊杰\n");
+    return 0;
+}
