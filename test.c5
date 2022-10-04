@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+    prinrf(“%c\n”,\'130');
+    return 0;
+}
