@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main()
+{   
+        int mus=13;
+            if(1==mus%2);
+                {
+                            printf("奇数");
+                }
+                    return 0;
+}
