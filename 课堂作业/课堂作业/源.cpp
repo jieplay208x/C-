@@ -51,7 +51,6 @@ using namespace std;
 //		return 2;
 //	}
 //}
-//
 //int main()
 //{
 //	int y = 0;
@@ -150,7 +149,6 @@ using namespace std;
 //		}
 //	}
 //	system("pause");
-//
 //	return 0;
 //}
 
@@ -193,38 +191,18 @@ int main()
 	if (x != y)
 	{
 		int min = (x > y ? y : x);
-		while (1)
-		{
-			if (x % min == 0 && y % min == 0)
-			{
-				cout <<"最大公约数为：" << min << endl;
-				break;
-			}
+		while (x % min !=0 || y % min !=0 )
+		{		
 			min--;
 		}
-		int max = (x > y ? x : y);
-		if (x % max == 0 && y % max == 0)
-		{
-			cout << "最小公倍数为：" << max<<endl;
-		}
-		else
-		{
-			while (1)
-			{
-				if (max % x == 0 && max % y == 0)
-				{
-					cout << "最小公倍数为：" << max << endl;
-					break;
-				}
-				max++;
-			}
-		}
-
+		cout << "最大公约数为：" << min << endl;
+		int max = (x > y ? x : y);			
+		while (max % x != 0 || max % y != 0)
+		{								
+			max++;
+		}		
+		cout << "最小公倍数为：" << max << endl;
 	}
-
-
-
 	system("pause");
-
 	return 0;
 }
