@@ -27,8 +27,8 @@ int main()
 		n--;
 		cout << endl;
 	}
-	m = m - 1;
-	n = n + 1;
+	m = m - 2;
+	n = n + 2;
 	for (i = 1; i <= L / 2 + 1; i++)
 	{
 		for (j = 1; j <= L; j++)
